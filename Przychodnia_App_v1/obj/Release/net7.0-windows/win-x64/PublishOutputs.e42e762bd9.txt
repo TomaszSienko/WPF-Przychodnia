@@ -1,0 +1,12 @@
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\Przychodnia_App_v1.pdb
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\Images\Lekarz2.png
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\Images\Lekarz3.png
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\Images\Lekarz4.png
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\Images\lekarz1.png
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\D3DCompiler_47_cor3.dll
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\PenImc_cor3.dll
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\PresentationNative_cor3.dll
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\vcruntime140_cor3.dll
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\wpfgfx_cor3.dll
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\bin\Release\net7.0-windows\publish\win-x64\Przychodnia_App_v1.exe

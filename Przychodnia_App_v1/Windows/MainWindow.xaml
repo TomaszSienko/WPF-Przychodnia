@@ -1,0 +1,97 @@
+﻿<Window x:Class="Przychodnia_App_v1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Przychodnia_App_v1"
+       
+        mc:Ignorable="d"
+        WindowStyle="None"
+        MouseDown="Window_MouseDown"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        Title="Projekt_Aplikacji_Przychodniv.0.1" Height="482" Width="802" Opacity="0.99" >
+    <Border CornerRadius="50" Opacity="0.9999">
+        <Border.Background>
+            <ImageBrush ImageSource="/outside1.png"/>
+        </Border.Background>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label x:Name="LABEL1" Grid.ColumnSpan="3"  FontSize="48" Foreground="#FFFDFDFD" Content="PRZYCHODNIA APP" Margin="0,112,0,141" HorizontalContentAlignment="Center" FontFamily="Franklin Gothic Book" Grid.RowSpan="2" Opacity="0.9" FontWeight="Bold" Background="#FF6E46CB" />
+
+
+            <Image HorizontalAlignment="Left" Height="82" Margin="93,20,0,0" VerticalAlignment="Top" Width="84" Source="/Icon5.png" RenderTransformOrigin="1,0" Grid.Column="1"/>
+            <Button x:Name="B_Window_Minimize" Grid.Column="2" Content="-" HorizontalAlignment="Left" Height="19" Margin="199,14,0,0" VerticalAlignment="Top" Width="21" Click="B_Window_Minimize1" Background="#FF24AEB9" BorderBrush="#FF9CEAE4" Foreground="White"/>
+            <Button x:Name="B_Window_Close" Grid.Column="2" Content="X" HorizontalAlignment="Left" Height="19" Margin="223,14,0,0" VerticalAlignment="Top" Width="21" Click="B_Window_Close1" Background="#FFF38F8F" Foreground="White" BorderBrush="#FFE29B9B"/>
+
+            <Button x:Name="B_Logowanie" Grid.Column="1" Content="Logowanie" HorizontalAlignment="Center" Height="74" Grid.Row="1" VerticalAlignment="Top" Width="201" FontSize="20" Click="B_logowanie1" FontFamily="Franklin Gothic Book" Foreground="#FFF7F7F7" Margin="0,86,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"></Setter>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Border CornerRadius="50" Opacity="0.98" Margin="10,36,267,61" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Row="1">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFB4B7C2" Offset="0.608"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid Margin="266,0,10,0">
+                    <TextBox x:Name="B_LoginInput" HorizontalAlignment="Left" Height="27" Margin="-220,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Foreground="#FFF7F7F7" FontFamily="Franklin Gothic Book" FontSize="14">
+                        <TextBox.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black"/>
+                                <GradientStop Color="#FF9B5DC8" Offset="1"/>
+                            </LinearGradientBrush>
+                        </TextBox.Background>
+                    </TextBox>
+                    <PasswordBox x:Name="B_PasswordInput" HorizontalAlignment="Left" Height="27" Margin="-220,112,0,0" VerticalAlignment="Top" Width="168" Foreground="White" FontFamily="Franklin Gothic Book" FontSize="14">
+                        <PasswordBox.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black"/>
+                                <GradientStop Color="#FF9B5DC8" Offset="1"/>
+                            </LinearGradientBrush>
+                        </PasswordBox.Background>
+                    </PasswordBox>
+                    <Label Content="Wprowadź login:" HorizontalAlignment="Left" Height="31" Margin="-190,18,0,0" VerticalAlignment="Top" Width="108" FontSize="14" FontFamily="Franklin Gothic Book" Foreground="White"/>
+                    <Label Content="Wprowadź hasło:" HorizontalAlignment="Left" Height="26" Margin="-190,81,0,0" VerticalAlignment="Top" Width="108" FontSize="14" Foreground="White" FontFamily="Franklin Gothic Book"/>
+                    <Button x:Name="B_TryLog" Content="Zatwierdź" HorizontalAlignment="Left" Height="23" Margin="-220,159,0,0" VerticalAlignment="Top" Width="168" Click="B_TryLog1" Foreground="White">
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF3ABBA6" Offset="0.111"/>
+                                <GradientStop Color="#FF4D0482" Offset="0.899"/>
+                                <GradientStop Color="#FF51CEBA" Offset="0.114"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+
+                </Grid>
+            </Border>
+
+        </Grid>
+
+
+    </Border>
+
+</Window>

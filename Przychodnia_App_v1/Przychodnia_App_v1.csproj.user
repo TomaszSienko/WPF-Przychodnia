@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\tomek\source\repos\Przychodnia_App_v1.02\Przychodnia_App_v1\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Windows\Doctor_Info.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\New_Visit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\New_Patient_Form.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Patient_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Visit_WIndow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Visit_Window_DoctorView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Warning.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Win1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Login_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\Win2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Windows\Doctor_Info.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\New_Visit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\New_Patient_Form.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Patient_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Visit_WIndow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Visit_Window_DoctorView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Warning.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Win1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Login_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\Win2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,181 @@
+﻿<Window x:Class="Przychodnia_App_v1.Win2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Przychodnia_App_v1.Windows"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        MouseDown="Window_MouseDown"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        Title="Dashboard" Height="482" Width="802" Opacity="0.98">
+
+    <Border CornerRadius="50" Opacity="0.99999">
+        <Border.Background>
+            <ImageBrush ImageSource="/Windows/Outside2.png"/>
+        </Border.Background>
+        <Grid>
+            <Image HorizontalAlignment="Left" Height="44" Margin="379,2,0,0" VerticalAlignment="Top" Width="50" Source="/Icon5.png" RenderTransformOrigin="1,0"/>
+            <Button x:Name="B_Window_Minimize" Content="-" HorizontalAlignment="Left" Height="19" Margin="734,14,0,0" VerticalAlignment="Top" Width="21" Click="B_Window_Minimize2" Background="#FF24AEB9" BorderBrush="#FF9CEAE4" Foreground="White"/>
+            <Button x:Name="B_Window_Close" Content="X" HorizontalAlignment="Left" Height="19" Margin="758,14,0,0" VerticalAlignment="Top" Width="21" Click="B_Window_Close2" Background="#FFF38F8F" Foreground="White" BorderBrush="#FFE29B9B"/>
+            <Button x:Name="B_Powrot" Content="Wyloguj" HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="57" FontFamily="Franklin Gothic Book" Foreground="#FFFCFCFC" Margin="672,14,0,0" Click="B_powrot2">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Border CornerRadius="40" BorderThickness="1" HorizontalAlignment="Center" Height="423" Margin="0,49,0,0" VerticalAlignment="Top" Width="754">
+
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid x:Name="Main_Grid"  HorizontalAlignment="Left" Height="373" Margin="180,33,0,0" VerticalAlignment="Top" Width="553" Background="#FFB9C1E8">
+                    <Calendar x:Name="Calendar" HorizontalAlignment="Left" Height="150" Margin="374,0,0,0" VerticalAlignment="Top" Width="169" SelectedDatesChanged="Wybranie_dnia"/>
+                    <ListBox x:Name="Dzisiejsze_wizyty" HorizontalAlignment="Left" Height="306" Margin="16,47,0,0" VerticalAlignment="Top" Width="344" d:ItemsSource="{d:SampleData ItemCount=5}" Background="#FF7695E8" Foreground="White" SelectionChanged="Wybrano_wizyte" FontWeight="Bold" FontSize="14"/>
+                </Grid>
+
+
+
+            </Border>
+            <DataGrid x:Name="Baza" HorizontalAlignment="Left" Height="169" Margin="24,265,0,0" VerticalAlignment="Top" Width="170" Background="#FFB4C2E6">
+
+            </DataGrid>
+            <Menu HorizontalAlignment="Center" Height="18" Margin="0,60,0,0" VerticalAlignment="Top" Width="708">
+                <MenuItem Header="Dodawanie">
+                    <MenuItem Header="Dodaj Pacjenta" Click="B_Pacjent_Nowy" />
+                    <MenuItem Header="Nowa Wizyta" Click="B_Wizyta_Nowa" />
+
+                </MenuItem>
+                <MenuItem Header="Wyświetl">
+                    <MenuItem Header="Pacjent" Click="B_Pacjent_Info" />
+                    <MenuItem Header="Lekarz" Click="B_Lekarz_Info" />
+                </MenuItem>
+                <MenuItem Header="Edytuj">
+                    <MenuItem Header="Pacjenta" Click="B_Pacjent_Usun" />
+                    <MenuItem Header="Lekarza" />
+                </MenuItem>
+                <MenuItem Header="Konta">
+                    <MenuItem Header="Utwórz konto" Click="B_Utworz_konto"/>
+                    <MenuItem Header="Zmien haslo"/>
+                </MenuItem>
+            </Menu>
+            <Button x:Name="B_Powrot_Copy1" Content="Adresy" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="59" FontFamily="Franklin Gothic Book" Foreground="#FFFBFBFB" Margin="35,140,0,0" Click="B_Adresy">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="0"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Rectangle HorizontalAlignment="Left" Height="7" Margin="24,128,0,0" Stroke="WhiteSmoke" VerticalAlignment="Top" Width="170" Fill="#FFFBFBFB"/>
+            <Button x:Name="Pacjenci" Content="Pacjenci" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="59" FontFamily="Franklin Gothic Book" Foreground="#FFFBFBFB" Margin="119,140,0,0" Click="B_Pacjenci">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="0"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="B_Dzisiejsze_wizyty" Content="Dzisiejsze wizyty" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="134" FontFamily="Franklin Gothic Book" Foreground="#FFFBFBFB" Margin="595,241,0,0" Click="Wyswietl_dzisiejsze_wizyty" FontSize="10">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Rectangle HorizontalAlignment="Left" Height="6" Margin="24,254,0,0" Stroke="WhiteSmoke" VerticalAlignment="Top" Width="170" Fill="#FFFBFBFB"/>
+            <Rectangle HorizontalAlignment="Left" Height="394" Margin="194,78,0,0" Stroke="WhiteSmoke" VerticalAlignment="Top" Width="6" Fill="#FFFBFBFB"/>
+            <Label x:Name="Wizyty_Label" Content="Dzisiejsze Wizyty" HorizontalAlignment="Left" Height="31" Margin="215,84,0,0" VerticalAlignment="Top" Width="352" Background="#FF6E46CB" Foreground="White" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.475,1.739"/>
+            <Button x:Name="Moje_Wizyty" Content="Moje Wizyty" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="82" FontFamily="Franklin Gothic Book" Foreground="#FFFBFBFB" Margin="66,170,0,0">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="0"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="B_Edycja_wizyty" Content="Edytuj wybraną wizyte" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="134" FontFamily="Franklin Gothic Book" Foreground="#FFFBFBFB" Margin="595,332,0,0" Click="Edycja_wybranej_wizyty" FontSize="10">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="B_wyswietl_wszystkie_wizyty" Content=" Wszystkie wizyty" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="134" FontFamily="Franklin Gothic Book" Foreground="#FFFBFBFB" Margin="595,266,0,0" Click="Wyswietl_wszystkie_wizyty" FontSize="10">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="B_usun_wizyte" Content="Usuń wybraną wizyte" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="134" FontFamily="Franklin Gothic Book" Foreground="#FFFBFBFB" Margin="595,416,0,0" Click="Usun_wybrana_wizyte" FontSize="10">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Border>
+</Window>

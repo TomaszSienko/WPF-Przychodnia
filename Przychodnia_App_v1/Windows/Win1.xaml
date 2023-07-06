@@ -1,0 +1,102 @@
+﻿<Window x:Class="Przychodnia_App_v1.Win1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Przychodnia_App_v1"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        MouseDown="Window_MouseDown"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        Title="Win1" Height="482" Width="802" Opacity="0.98">
+
+    <Border CornerRadius="50" Opacity="0.99999">
+        <Border.Background>
+            <ImageBrush ImageSource="/Windows/Outside2.png"/>
+        </Border.Background>
+        <Grid>
+            <Button x:Name="B_Window_Minimize" Content="-" HorizontalAlignment="Left" Height="19" Margin="734,14,0,0" VerticalAlignment="Top" Width="21" Click="B_Window_Minimize1" Background="#FF24AEB9" BorderBrush="#FF9CEAE4" Foreground="White"/>
+            <Button x:Name="B_Window_Close" Content="X" HorizontalAlignment="Left" Height="19" Margin="758,14,0,0" VerticalAlignment="Top" Width="21" Click="B_Window_Close1" Background="#FFF38F8F" Foreground="White" BorderBrush="#FFE29B9B"/>
+            <Button x:Name="B_Powrot" Content="Powrot" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="140" FontSize="20" FontFamily="Franklin Gothic Book" Foreground="#FF1F0742" Margin="24,8,0,0" Click="B_powrot">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Border CornerRadius="40" BorderThickness="1" HorizontalAlignment="Center" Height="69" Margin="0,28,0,0" VerticalAlignment="Top" Width="250">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Label Content="Rejestracja" HorizontalAlignment="Left" Height="53" Margin="65,15,0,0" VerticalAlignment="Top" Width="183" FontFamily="Franklin Gothic Book" FontSize="24" Foreground="#FFF3F3F3"/>
+            </Border>
+            <Border CornerRadius="40" BorderThickness="1" HorizontalAlignment="Center" Height="349" Margin="0,123,0,0" VerticalAlignment="Top" Width="754">
+
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid Margin="0,0,0,-1">
+
+
+
+
+                    <Image HorizontalAlignment="Center" Height="53" Margin="0,-1,0,0" VerticalAlignment="Top" Width="40" Source="/Icon5.png" RenderTransformOrigin="1,0" Grid.Column="1"/>
+                    <Label Content="Podaj Imie:" HorizontalAlignment="Left" Height="34" Margin="209,72,0,0" VerticalAlignment="Top" Width="183" FontFamily="Franklin Gothic Book" FontSize="20" Foreground="#FFF3F3F3"/>
+                    <TextBox x:Name="TextboxR1" HorizontalAlignment="Left" Height="28" Margin="397,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266"/>
+                    <TextBox x:Name="TextboxR2" HorizontalAlignment="Left" Height="28" Margin="397,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266"/>
+                    <TextBox x:Name="TextboxR3" HorizontalAlignment="Left" Height="28" Margin="397,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="266"/>
+                    <TextBox x:Name="TextboxR4" HorizontalAlignment="Left" Height="28" Margin="397,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266"/>
+                    <TextBox x:Name="TextboxR5" HorizontalAlignment="Left" Height="28" Margin="397,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266"/>
+                    <Label Content="Podaj Nazwisko:" HorizontalAlignment="Left" Height="34" Margin="209,111,0,0" VerticalAlignment="Top" Width="183" FontFamily="Franklin Gothic Book" FontSize="20" Foreground="#FFF3F3F3"/>
+                    <Label Content="Podaj adres email:" HorizontalAlignment="Left" Height="34" Margin="209,0,0,0" VerticalAlignment="Center" Width="183" FontFamily="Franklin Gothic Book" FontSize="20" Foreground="#FFF3F3F3"/>
+                    <Label Content="Stwórz nowy login:" HorizontalAlignment="Left" Height="34" Margin="209,199,0,0" VerticalAlignment="Top" Width="183" FontFamily="Franklin Gothic Book" FontSize="20" Foreground="#FFF3F3F3"/>
+                    <Label Content="Podaj nowe hasło:" HorizontalAlignment="Left" Height="34" Margin="209,242,0,0" VerticalAlignment="Top" Width="183" FontFamily="Franklin Gothic Book" FontSize="20" Foreground="#FFF3F3F3"/>
+
+                </Grid>
+            </Border>
+            <Border CornerRadius="40" BorderThickness="1" HorizontalAlignment="Center" Height="41" Margin="0,419,0,0" VerticalAlignment="Top" Width="250">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <Button x:Name="B_Register_Button" Content="Stwórz nowe konto" FontFamily="Franklin Gothic Book" Foreground="#FFF9F9F9" Click="B_Register_Button1">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="10"></Setter>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFABADB4"/>
+                                <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                                <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

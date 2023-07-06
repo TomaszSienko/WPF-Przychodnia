@@ -1,0 +1,106 @@
+﻿<Window x:Class="Przychodnia_App_v1.New_Patient_Form"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Przychodnia_App_v1"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        MouseDown="Window_MouseDown"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        Title="New_Patient_Form" Height="482" Width="462" Opacity="0.98">
+
+    <Border CornerRadius="50" Opacity="0.99999" Margin="10,0,0,0">
+        <Border.Background>
+            <ImageBrush ImageSource="/Windows/Outside2.png"/>
+        </Border.Background>
+        <Grid Margin="0,0,20,0">
+            <Button x:Name="B_Window_Minimize" Content="-" HorizontalAlignment="Left" Height="19" Margin="372,10,0,0" VerticalAlignment="Top" Width="20" Click="B_Window_Minimize1" Background="#FF24AEB9" BorderBrush="#FF9CEAE4" Foreground="White"/>
+            <Button x:Name="B_Window_Close" Content="X" HorizontalAlignment="Left" Height="19" Margin="400,10,0,0" VerticalAlignment="Top" Width="21" Click="B_Window_Close1" Background="#FFF38F8F" Foreground="White" BorderBrush="#FFE29B9B"/>
+            <Border CornerRadius="40" BorderThickness="1" HorizontalAlignment="Left" Height="69" Margin="29,49,0,0" VerticalAlignment="Top" Width="410">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Label Content="Wprowadz dane pacjenta
+                       " HorizontalAlignment="Center" Height="39" VerticalAlignment="Center" Width="266" FontFamily="Franklin Gothic Book" FontSize="24" Foreground="#FFF3F3F3"/>
+            </Border>
+            <Border CornerRadius="40" BorderThickness="1" HorizontalAlignment="Left" Height="349" Margin="58,123,0,0" VerticalAlignment="Top" Width="352">
+
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFABADB4"/>
+                        <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                        <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid Margin="0,0,0,-1">
+
+
+
+
+                    <Image HorizontalAlignment="Center" Height="33" Margin="0,-115,0,0" VerticalAlignment="Top" Width="32" Source="/Icon5.png" RenderTransformOrigin="1,0"/>
+                    <TextBox x:Name="Textbox_imie" HorizontalAlignment="Left" Height="24" Margin="174,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" FontSize="14" TabIndex="1"/>
+
+                    <Button x:Name="New_Patient_Creation" HorizontalAlignment="Center" Content="Dodaj pacjenta" FontFamily="Franklin Gothic Book" Foreground="#FFF9F9F9" Click="B_New_Patient_Creation" Margin="0,315,0,10" Width="86" >
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="10"></Setter>
+                            </Style>
+                        </Button.Resources>
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFABADB4"/>
+                                <GradientStop Color="#FF6C7CBD" Offset="1"/>
+                                <GradientStop Color="#FF9EA3B5" Offset="0.278"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <TextBox x:Name="Textbox_pesel" HorizontalAlignment="Left" Height="24" Margin="174,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" FontSize="14" TabIndex="3"/>
+                    <TextBox x:Name="Textbox_mail" HorizontalAlignment="Left" Height="24" Margin="175,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" FontSize="14" TabIndex="5" ClipToBounds="True"/>
+                    <TextBox x:Name="Textbox_nazwisko" HorizontalAlignment="Left" Height="24" Margin="174,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" FontSize="14" TabIndex="2"/>
+                    <TextBox x:Name="Textbox_nrtel" HorizontalAlignment="Left" Height="24" Margin="174,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" FontSize="14" TabIndex="4"/>
+                    <TextBox x:Name="Textbox_miasto" HorizontalAlignment="Left" Height="24" Margin="175,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" FontSize="14" TabIndex="6"/>
+                    <TextBox x:Name="Textbox_ulica" HorizontalAlignment="Left" Height="24" Margin="175,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" FontSize="14" TabIndex="7"/>
+                    <TextBox x:Name="Textbox_kodpoczt" HorizontalAlignment="Left" Height="24" Margin="175,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" FontSize="14" TabIndex="8"/>
+                    <TextBox x:Name="Textbox_nrmieszkania" HorizontalAlignment="Left" Height="24" Margin="175,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" FontSize="14" TabIndex="9"/>
+                </Grid>
+            </Border>
+            <Rectangle HorizontalAlignment="Left" Height="2" Margin="58,433,0,0" Stroke="White" VerticalAlignment="Top" Width="352" Fill="White" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle HorizontalAlignment="Left" Height="310" Margin="225,123,0,0" Stroke="White" VerticalAlignment="Top" Width="1" Fill="White" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Label Content="Imie:" HorizontalAlignment="Left" Height="26" Margin="125,148,0,0" VerticalAlignment="Top" Width="95" Foreground="White"/>
+            <Label Content="Nazwisko:" HorizontalAlignment="Left" Height="26" Margin="125,174,0,0" VerticalAlignment="Top" Width="95" Foreground="White"/>
+            <Label Content="PESEL:" HorizontalAlignment="Left" Height="26" Margin="125,205,0,0" VerticalAlignment="Top" Width="95" Foreground="White"/>
+            <Label Content="Numer Telefonu:" HorizontalAlignment="Left" Height="26" Margin="125,236,0,0" VerticalAlignment="Top" Width="95" Foreground="White"/>
+            <Label Content="E-mail:" HorizontalAlignment="Left" Height="26" Margin="125,262,0,0" VerticalAlignment="Top" Width="95" Foreground="White"/>
+            <Label Content="Miasto:" HorizontalAlignment="Left" Height="26" Margin="125,293,0,0" VerticalAlignment="Top" Width="95" Foreground="White"/>
+            <Label Content="Ulica:" HorizontalAlignment="Left" Height="26" Margin="125,319,0,0" VerticalAlignment="Top" Width="95" Foreground="White"/>
+            <Label Content="Kod pocztowy:" HorizontalAlignment="Left" Height="26" Margin="125,350,0,0" VerticalAlignment="Top" Width="95" Foreground="White"/>
+            <Label Content="Nr Mieszkania:" HorizontalAlignment="Left" Height="26" Margin="125,376,0,0" VerticalAlignment="Top" Width="95" Foreground="White"/>
+        </Grid>
+    </Border>
+</Window>
